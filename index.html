@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Юристы на все случаи-Главная страница</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+</head>
+<body class="body page-index clearfix">
+  <div class="container container-1 clearfix">
+    <p id="s1" class="text text-1">Юристы на все случаи</p>
+    <button class="_button _button-1">О нас</button>
+    <button onClick="window.location='galary.html';" class="_button _button-2">Галерея</button>
+    <button class="_button _button-3">Где мы?</button>
+    <div id="menu" class="text text-2">
+      <p><em>Наши специалисты.</em></p>
+      <p><strong>Животова Алёна Павловна</strong></p>
+      <p><strong>Стебенев Андрей Анатольевич</strong></p>
+      <p><strong>Животова Ирина Павловна</strong></p>
+</div>
+    <div class="text text-3">
+      <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>О нас.</strong></p>
+      <p>В штате нашей компании только высококвалифицированные, опытные юристы и адвокаты.Для граждан Российской Федерации, юридических лиц, а также для иностранных граждан мы предоставляем следующие услуги:</p>
+      <p>&nbsp;устные и письменные юридические консультации;</p>
+      <p>подготовка правовых заключений по любому вопросу;</p>
+      <p>правовой анализ&nbsp;документов клиента;</p>
+      <p>проверка юридической чистоты и сопровождение сделок;</p>
+      <p>досудебное урегулирование конфликтов;</p>
+      <p>корпоративная юридическая помощь;</p>
+      <p>решение корпоративных конфликтов;</p>
+      <p>участие в переговорах;</p>
+      <p>заключение и расторжение договоров; подготовка допсоглашений и&nbsp;</p>
+      <p>протоколов разногласий;</p>
+      <p>претензионная работа;&nbsp;</p>
+      <p>помощь во взаимодействии с органами власти;</p>
+      <p>подготовка исковых заявлений апелляционных &nbsp;жалоб;</p>
+      <p>&nbsp;представительство в судах всех инстанций;</p>
+      <p>помощь по исполнительному производству.</p>
+</div>
+    <div class="container container-2 clearfix">
+      <p class="text text-4">Где мы?</p>
+      <div class="wrapper"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?t=m&amp;q=Альтпак в Мытищах&amp;output=embed"></iframe></div>
+    </div>
+    <div class="container container-3 clearfix">
+      <p class="text text-5">Коментарии</p>
+      <div class="element element-1"></div>
+      <p class="text text-6">Компания крутая. Сразу помогла.</p>
+      <p class="text text-7">Напиши свой коментарий</p>
+      <textarea class="_textarea" placeholder="Напиши коментарий"></textarea>
+      <button class="_button _button-4">Отправить</button>
+    </div>
+    <div id="menu" class="container container-4 clearfix">
+      <p id="menu" class="text text-8"><a href="#s1">НАВЕРХ</a></p>
+    </div>
+    <div class="container container-5 clearfix">
+      <p class="text text-9">Животов Даниил Александрович</p>
+      <div onClick="window.location='https://www.facebook.com/';" class="element element-2"></div>
+      <div onClick="window.location='https://twitter.com/?lang=ru';" class="element element-3"></div>
+      <div onClick="window.location='https://www.youtube.com/channel/UC7uGQNMIpevsttELzu0dV6w';" class="element element-4"></div>
+    </div>
+  </div>
+  <p class="text text-10">Где мы?</p>
+</body>
+</html>

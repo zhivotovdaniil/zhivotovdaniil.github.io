@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Юристы на все случаи - Галерея</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/galary-grid.css">
+  <link rel="stylesheet" href="css/galary.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top - 150;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+
+</head>
+<body class="body page-galary clearfix">
+  <div class="container container-1 clearfix">
+    <p class="text text-1">Галерея</p>
+    <button onClick="window.location='index.html';" class="_button">Главная
+страница</button>
+    <div class="element element-1"></div>
+    <div class="element element-2"></div>
+    <div class="element element-3"></div>
+    <div class="container clearfix">
+      <p class="text text-2">Животов Даниил Александрович</p>
+      <div onClick="window.location='https://www.facebook.com/';" class="element element-4"></div>
+      <div onClick="window.location='https://twitter.com/?lang=ru';" class="element element-5"></div>
+      <div onClick="window.location='https://www.youtube.com/channel/UC7uGQNMIpevsttELzu0dV6w';" class="element element-6"></div>
+    </div>
+  </div>
+</body>
+</html>
